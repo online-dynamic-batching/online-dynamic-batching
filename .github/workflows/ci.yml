@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install package
+        run: |
+          python -m pip install -U pip
+          python -m pip install -e ".[dev]"
+      - name: Run unit tests
+        run: pytest tests/test_grouping.py tests/test_utils.py tests/test_callback.py
+      - name: Run synthetic benchmark smoke
+        run: python examples/synthetic_benchmark.py --device cpu --num-samples 128 --num-workers 1
+
+  ddp-smoke:
+    name: DDP smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package
+        run: |
+          python -m pip install -U pip
+          python -m pip install -e ".[dev]"
+      - name: Run CPU DDP smoke test
+        run: pytest tests/test_ddp_smoke.py --timeout=120
+
+  package:
+    name: Build package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build and check dist
+        run: |
+          python -m pip install -U pip
+          python -m pip install -e ".[release]"
+          python -m build
+          python -m twine check dist/*

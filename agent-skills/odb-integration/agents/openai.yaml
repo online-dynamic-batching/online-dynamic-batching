@@ -1,0 +1,4 @@
+interface:
+  display_name: "ODB Integration"
+  short_description: "Wire ODB into training frameworks"
+  default_prompt: "Use $odb-integration to add online-dynamic-batching to this training codebase."

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: Online Dynamic Batching for Distributed LLM Fine-Tuning
+message: If you use ODB in research or production, please cite the software and paper.
+type: software
+authors:
+  - name: ODB contributors
+year: 2026
+license: Apache-2.0
+repository-code: https://github.com/online-dynamic-batching/online-dynamic-batching

@@ -1,0 +1,26 @@
+name: Benchmark result
+description: Share an ODB benchmark or regression
+title: "[Benchmark]: "
+labels: ["benchmark"]
+body:
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Hardware, model, dataset, training framework, and ODB config.
+    validations:
+      required: true
+  - type: textarea
+    id: throughput
+    attributes:
+      label: Throughput
+      description: Report literal emitted-sample throughput and wall-clock time.
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: Quality
+      description: Report Standard and ODB quality metrics when available.
+    validations:
+      required: true

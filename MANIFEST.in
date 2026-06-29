@@ -1,0 +1,13 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CITATION.cff
+include CODE_OF_CONDUCT.md
+include CONTRIBUTING.md
+include ROADMAP.md
+include SECURITY.md
+recursive-include docs *.md *.svg
+recursive-include examples *.py *.ipynb
+recursive-include agent-skills *.md *.py *.yaml
+recursive-include tests *.py
+global-exclude __pycache__ *.py[cod] .DS_Store

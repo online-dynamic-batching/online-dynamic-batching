@@ -1,0 +1,26 @@
+name: Bug report
+description: Report an ODB integration or correctness issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: PyTorch version, Python version, OS, distributed backend, and training framework.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Include the DataLoader construction and odb.apply call if possible.
+    validations:
+      required: true
