@@ -80,8 +80,8 @@ These are alternatives. Pick the row that matches your training stack.
 | Accelerate | [Accelerate](docs/integration-guides/accelerate.md) | `configure_accelerator(...)` | [`odb-example-accelerate`](https://github.com/online-dynamic-batching/odb-example-accelerate) |
 | Lightning | [Lightning](docs/integration-guides/lightning.md) | `configure_lightning_module(...)` | [`odb-example-lightning`](https://github.com/online-dynamic-batching/odb-example-lightning) |
 
-The shared public MM-Mix data recipe lives in
-[`odb-mm-mix-example`](https://github.com/online-dynamic-batching/odb-mm-mix-example).
+The shared MM-Mix dataset builder lives in
+[`build-mm-mix-dataset`](https://github.com/online-dynamic-batching/build-mm-mix-dataset).
 
 ### 3. Run A Public Demo
 

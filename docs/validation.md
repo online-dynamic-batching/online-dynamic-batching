@@ -52,7 +52,7 @@ evaluation?
 | Example | Purpose |
 | --- | --- |
 | [online-dynamic-batching](https://github.com/online-dynamic-batching/online-dynamic-batching) | Package tests, synthetic benchmark, and framework adapter unit tests. |
-| [odb-mm-mix-example](https://github.com/online-dynamic-batching/odb-mm-mix-example) | Shared public MM-Mix data recipe used by the framework examples. |
+| [build-mm-mix-dataset](https://github.com/online-dynamic-batching/build-mm-mix-dataset) | Builds the local public MM-Mix-style dataset used by the framework examples. |
 | [odb-example-hf-trainer](https://github.com/online-dynamic-batching/odb-example-hf-trainer) | HF Trainer path with a model-specific lazy tensor pipeline. |
 | [odb-example-llamafactory](https://github.com/online-dynamic-batching/odb-example-llamafactory) | LLaMA-Factory path using the ODB hook and LLaMA-Factory-compatible processing. |
 | [odb-example-accelerate](https://github.com/online-dynamic-batching/odb-example-accelerate) | Native Accelerate loop path. |

@@ -26,8 +26,8 @@ single-sample tensors. Pick one path; these are alternatives, not a checklist.
 | Accelerate | [Accelerate](integration-guides/accelerate.md) | [odb-example-accelerate](https://github.com/online-dynamic-batching/odb-example-accelerate) |
 | Lightning | [Lightning](integration-guides/lightning.md) | [odb-example-lightning](https://github.com/online-dynamic-batching/odb-example-lightning) |
 
-The shared public MM-Mix data recipe used by the framework examples lives in
-[odb-mm-mix-example](https://github.com/online-dynamic-batching/odb-mm-mix-example).
+The shared MM-Mix dataset builder used by the framework examples lives in
+[build-mm-mix-dataset](https://github.com/online-dynamic-batching/build-mm-mix-dataset).
 
 ## Concepts
 

@@ -26,8 +26,8 @@ raw records
 | Accelerate | [Accelerate](accelerate.md) | [odb-example-accelerate](https://github.com/online-dynamic-batching/odb-example-accelerate) | `online-dynamic-batching[accelerate]` | `configure_accelerator(...)` |
 | Lightning | [Lightning](lightning.md) | [odb-example-lightning](https://github.com/online-dynamic-batching/odb-example-lightning) | `online-dynamic-batching[lightning]` | `configure_lightning_module(...)` |
 
-The shared public MM-Mix data recipe used by the framework examples lives in
-[odb-mm-mix-example](https://github.com/online-dynamic-batching/odb-mm-mix-example).
+The shared MM-Mix dataset builder used by the framework examples lives in
+[build-mm-mix-dataset](https://github.com/online-dynamic-batching/build-mm-mix-dataset).
 
 ## Core Runtime Contract
 
